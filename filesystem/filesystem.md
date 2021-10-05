@@ -130,6 +130,36 @@ lrwxrwxrwx    1 root     root            15 Oct  5 00:17 stdout -> /proc/self/fd
 
 We see that it matches the pipes of stdin=0, stdout=1, stderr=2
 
+# Root Filesystem
+
+The root-directory is the top-most directory in a hierarchy, 
+
+The root file system is the file system contained on the same disk partition on which the root directory is located.
+
+![fs-layout](fs-layout.png)
+
+Below is a list of sub file systems under root directory:
+
+```
+├── bin : Binary storage, that is executable from any parent path
+├── dev : For external devices connected
+├── etc : Stores configuration files
+├── home : Contains home directory for the user
+├── lib : Essential Shared Libraries
+├── media : Removable media, such as inserting a CD, will create a directory under `media/`
+├── mnt : Temporary mount points. Used to mount partitions.
+├── opt : Optional packages
+├── proc : Store process folders
+├── root : Home directory for the root user
+├── run : Filesystem for tools needing to mount early
+├── sbin : Binaries for administrative tools (such as package managers, ip stuff)
+├── srv : Used by services, wanting a single tree for writable data/scripts
+├── sys : Stores driver information
+├── tmp : Temporary file storage, deleted whenever system restarts
+├── usr : User binaries and read only data
+├── var : Writable usr/ directory, mostly contains log files from processes
+```
+
 ## References
 
 - [General overview of the Linux file system](https://tldp.org/LDP/intro-linux/html/sect_03_01.html)
