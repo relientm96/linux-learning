@@ -60,7 +60,7 @@ Run the following commands and inspect the file types:
 ```bash
 touch test.txt
 mkdir test/
-ln -s test.txt link_test.txt
+ln -s test.txt link_test.txtg
 ```
 
 Output:

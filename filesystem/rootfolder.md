@@ -21,3 +21,7 @@ Below is a list of sub file systems under root directory:
 ├── usr : User binaries and read only data
 ├── var : Writable usr/ directory, mostly contains log files from processes
 ```
+
+This can be viewed as a hierachical tree like structure:
+
+![fs-layout](filesystem/fs-layoug.png)
