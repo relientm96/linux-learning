@@ -51,7 +51,7 @@ b Block device
 Note, I am running most of the following commands on a basic `alpine` docker image:
 
 ```
-
+docker run -it alpine
 ```
 
 **Regular files, directories and symbolic links are just files**
