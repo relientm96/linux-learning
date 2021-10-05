@@ -24,4 +24,4 @@ Below is a list of sub file systems under root directory:
 
 This can be viewed as a hierachical tree like structure:
 
-![fs-layout](filesystem/fs-layoug.png)
+![fs-layout](fs-layoug.png)
