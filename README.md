@@ -1,3 +1,3 @@
-# Linux Learning
+# Notes
 
-Set of notes on Linux concepts.  
+Repository to store notes from learning.
