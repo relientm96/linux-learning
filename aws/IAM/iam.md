@@ -12,9 +12,9 @@ IAM runs on policy documents, which contain a list of IAM statements.
 
 Each statement contains the following fields:
 
-* Principal - The party (AWS user/role/account) that the policy applies to (**who**).
+* Principal - The party (AWS user/role/federated user/application) intending to perform an action on a resource (**who**).
 * Effect - A string literal. Either `Allow` or `Deny`. (**can or can't**)
-* Action - List of allowed actions on resource (**what**)
+* Action - The actions or operations that the principal wants to perform. (**what**)
 * Resource - The resource(s) in question that listed actions are tied to. (**which**)
 
 ## Policy Structure
