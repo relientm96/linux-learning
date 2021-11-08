@@ -4,14 +4,18 @@ What is IAM?
 
 * AWS managed service
 * Enables you to state whether a party should be allowed or denied the ability to invoke an AWS action on a resource.
+* IAM decides **who** can (or can’t) do **what** to **which** AWS resources.
 
 ## Definitions
 
-* Policy - Document outlining permissions granted/denied for a principal to use an AWS resource. Usually in `json` or `yaml`.
-* Principal - The party (AWS user/role/account) that the policy applies to.
-* Effect - A string literal. Either `Allow` or `Deny`.
-* Action - AWS Actions that are bounded by the effect.
-* Resource - The resource(s) in question that listed actions are tied to.
+IAM runs on policy documents, which contain a list of IAM statements.
+
+Each statement contains the following fields:
+
+* Principal - The party (AWS user/role/account) that the policy applies to (**who**).
+* Effect - A string literal. Either `Allow` or `Deny`. (**can or can't**)
+* Action - List of allowed actions on resource (**what**)
+* Resource - The resource(s) in question that listed actions are tied to. (**which**)
 
 ## Policy Structure
 
@@ -40,10 +44,9 @@ What is IAM?
 Ultimately, a policy document can be read as a list of statements of the following form:
 
 ```bash
-Statement <SID> <grants/denies> the party <principal> actions 
+Statement <SID> <grants/denies> <principal> actions 
 <action1, action2, .... actionN> on AWS resources <resource1, 
 resource2, ... resourceN>
 ```
 
 ## IAM Workflow
-
