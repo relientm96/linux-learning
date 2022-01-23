@@ -27,7 +27,8 @@
 ## What is a container?
 
 - A way to package an application with all necessary dependencies and configuration.
-- That package is a portable artifact, easily shared and moved around.
+- That package is portable, easily shared and moved around.
+- You can run code inside that package!
 
 ## Why containers?
 
